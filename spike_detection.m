@@ -1,4 +1,5 @@
 function [valid_peaks,peak_ind] = spike_detection(data,threshold)
+$Function takes in data and a threshold value. Returns the peaks that exceed the threshold. Each peak returns a value and index. 
 %Get local maxima/minima values
 [maxima, minima, min_ind, max_ind] = process(data);
 minima = -minima;
